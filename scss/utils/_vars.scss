@@ -1,0 +1,51 @@
+:root {
+    /* *********************************************** COLORS *********************************************** */
+    --white-color: #fff;
+    --adress-color: rgba(255, 255, 255, 0.6);
+    --accent-color: #2196f3;
+    --logo-color: #000000;
+    --paragraph-color: #757575;
+    --heading-color: #212121;
+    --background-dark: #2F303A;
+    --background-grey: #F5F4FA;
+    --header-border: #ECECEC;
+    --portfolio-item: #eeeeee;
+    --benefits-background: #F5F4FA;
+    --socials-color: #AFB1B8;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --duration: 250ms;
+    --background-works: rgba(47, 48, 58, 0.8);
+    --placeholder-color: rgba(255, 255, 255, 0.6);
+    --portfolio-description: rgba(33, 150, 243, 0.9);
+    --backdrop-background: rgba(0, 0, 0, 0.2);
+    --modal-btn-border: rgba(0, 0, 0, 0.1);
+    --border-input: rgba(33, 33, 33, 0.2);
+    --placeholder-color: rgba(117, 117, 117, 0.5);
+    --letter-spacing-input: 0.01em;
+    --mobile: 480px;
+    --laptop: 768px;
+    --desctop: 1200px;
+
+    /* =========================================================================================================================================  */
+
+    /* *********************************************** LETTER-SPACING *********************************************** */
+    --ls-002: 0.02em;
+    --ls-003: 0.03em;
+    --ls-006: 0.06em;
+    /* ========================================================================================================================================= */
+}
+
+// Responsive //
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

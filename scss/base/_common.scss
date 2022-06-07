@@ -1,0 +1,49 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--heading-color);
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include device(desctop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+.section--no-padding-top {
+    padding-top: 0;
+    display: none;
+
+    @include device(desctop) {
+        display: block;
+    }
+}
+.section__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: var(--ls-003);
+
+    @include device(desctop) {
+        font-size: 36px;
+    }
+}
+.section__title--mb {
+    margin-bottom: 30px;
+
+    @include device(desctop) {
+        margin-bottom: 50px;
+    }
+}
+.section--other-background {
+    background-color: var(--background-grey);
+}

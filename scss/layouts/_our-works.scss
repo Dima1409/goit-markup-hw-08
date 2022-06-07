@@ -1,0 +1,26 @@
+
+.work-list {
+    display: flex;
+    justify-content: space-between;
+
+    &__wrapper {
+    position: relative;
+}
+
+    &__description {
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: var(--ls-003);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 14px;
+    position: absolute;
+    background-color: var(--background-works);
+    height: 70px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+}
+}

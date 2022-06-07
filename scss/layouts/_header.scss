@@ -1,0 +1,21 @@
+/* *********************************************** MAIN-HEADER *********************************************** */
+.header {
+    border-bottom: 1px solid var(--header-border);
+    position: relative;
+
+//     &__container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+}
+
+.header__logo {
+    // margin-right: 92px;
+    color: var(--logo-color);
+    padding-top: 16px;
+    padding-bottom: 14px;
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
