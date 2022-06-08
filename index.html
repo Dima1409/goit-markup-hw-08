@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- *********************************************** ШАПКА САЙТА *********************************************** -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a href="./index.html" class="logo header__logo"
@@ -100,7 +100,30 @@
           </div>
         </nav>
       </div>
-    </header> -->
+    </header>
+    <!-- 
+    Mobile-menu -->
+    <div class="mobile-menu">
+      <ul class="mobile-menu__nav">
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Студия</a></li>
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Портфолио</a></li>
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
+      </ul>
+      <ul class="mobile-menu__contacts">
+        <li class="mobile-menu__item">
+          <a href="tel:+380961111111" class="mobile-menu__link">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="mailto:info@devstudio.com" class="mobile-menu__link">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__socials">
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Instagram</a></li>
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Twitter</a></li>
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Facebook</a></li>
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">LinkedIn</a></li>
+      </ul>
+    </div>
     <!--=========================================================================================================================================-->
 
     <main>
@@ -392,7 +415,7 @@
       <!-- ========================================================================================================================================= -->
 
       <!-- *********************************************** СЕКЦИЯ ПОСТОЯННЫЕ КЛИЕНТЫ *********************************************** -->
-      <div class="section">
+      <!-- <div class="section">
         <div class="container">
           <h2 class="section__title section__title--mb">Постоянные клиенты</h2>
           <ul class="clients-list">
@@ -440,76 +463,74 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <!-- /* ========================================================================================================================================= */ -->
     </main>
     <!-- *********************************************** ПОДВАЛ *********************************************** -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="contacts container">
-        <!-- start -->
-        <div class="start">
-          <a href="./index.html" class="logo logo--footer"
-            ><span class="logo__text">Web</span>Studio</a
-          >
-          <address class="start__address">
-            <ul class="start__list">
-              <li class="start__item">
-                <a href="https://goo.gl/maps/N9EiAacSb85TZTzo8" class="start__link"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="contacts-wrapper">
+          <div class="start">
+            <a href="./index.html" class="logo logo--footer"
+              ><span class="logo__text">Web</span>Studio</a
+            >
+            <address class="start__address">
+              <ul class="start__list">
+                <li class="start__item">
+                  <a href="https://goo.gl/maps/N9EiAacSb85TZTzo8" class="start__link"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="start__item">
+                  <a class="start__link start__link--grey" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="start__item">
+                  <a class="start__link start__link--grey" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="join">
+            <span class="join__text">Присоединяйтесь</span>
+            <ul class="join-list">
+              <li class="join-list__item">
+                <a href="#" class="socials__link join-list__link">
+                  <svg class="socials__image join-list__image" width="20" height="20">
+                    <use href="./images/svg/icon.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="start__item">
-                <a class="start__link start__link--grey" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+              <li class="join-list__item">
+                <a href="#" class="socials__link join-list__link">
+                  <svg class="socials__image join-list__image" width="20" height="20">
+                    <use href="./images/svg/icon.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="start__item">
-                <a class="start__link start__link--grey" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+              <li class="join-list__item">
+                <a href="#" class="socials__link join-list__link">
+                  <svg class="socials__image join-list__image" width="20" height="20">
+                    <use href="./images/svg/icon.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-list__item">
+                <a href="#" class="socials__link join-list__link">
+                  <svg class="socials__image join-list__image" width="20" height="20">
+                    <use href="./images/svg/icon.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <!-- ======================== -->
 
-        <!-- join -->
-        <div class="join">
-          <span class="join__text">Присоединяйтесь</span>
-          <ul class="join-list">
-            <li class="join-list__item">
-              <a href="#" class="socials__link join-list__link">
-                <svg class="socials__image join-list__image" width="20" height="20">
-                  <use href="./images/svg/icon.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a href="#" class="socials__link join-list__link">
-                <svg class="socials__image join-list__image" width="20" height="20">
-                  <use href="./images/svg/icon.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a href="#" class="socials__link join-list__link">
-                <svg class="socials__image join-list__image" width="20" height="20">
-                  <use href="./images/svg/icon.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a href="#" class="socials__link join-list__link">
-                <svg class="socials__image join-list__image" width="20" height="20">
-                  <use href="./images/svg/icon.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- ============================== -->
-
-        <!-- FORM-FOOTER -->
+        
         <div class="footer-form">
           <span class="join__text">Подпишитесь на рассылку</span>
 
@@ -527,9 +548,9 @@
             </button>
           </form>
         </div>
-        <!-- =================================== -->
+        
       </div>
-    </footer>
+    </footer> -->
     <!-- =========================================================================================================================================  -->
 
     <!-- ********************************** МОДАЛЬНОЕ ОКНО ********************************************* -->

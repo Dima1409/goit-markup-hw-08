@@ -1,32 +1,67 @@
 .footer {
     background-color: var(--background-dark);
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
+    @include device(desctop) {
+        text-align: left;
+    }
 }
 
 .contacts {
-    // display: flex;
-    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // align-items: baseline;
+    @include device(desctop) {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+}
+.contacts-wrapper {
+    @include device(tablet) {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 60px;
+        align-items: baseline;
+    }
+    @include device(desctop) {
+        margin-bottom: 0;
+        justify-content: flex-start;
+        align-items: baseline;
+       
+    }
 }
 
 .logo--footer {
+    display: block;
     color: var(--white-color);
+    margin-bottom: 20px;
+    @include device(desctop) {
+        font-size: 26px;
+    }
 }
 
 /* start */
 .start {
-    margin-bottom: 60px;
-    
-    &__address {
-    margin-top: 20px;
-}   
+    @include device(mobile-only) {
+        margin-bottom: 60px;
+    }
+
+    @include device(desctop) {
+        margin-right: 70px;
+    }  
     
     &__list {
     flex-direction: column;
 }
 
     &__item:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    @include device(desctop) {
+    margin-bottom: 9px;
+    }
 }   
 
     &__link {
@@ -53,7 +88,10 @@
 
 /* join */
 .join {
-    margin-bottom: 60px;
+    @include device(mobile-only) {
+        margin-bottom: 60px;
+    }
+    
 }
 
 .join__text {
@@ -88,11 +126,18 @@
 
 /* footer-form */
 .footer-form {
-    margin-left: auto;
+    @include device(desctop) {
+        margin-right: 0;
+        margin-left: auto;
+    }
+   
 }
 
 .form-action {
-    // display: flex;
+    @include device(desctop) {
+        display: flex;
+    }
+    
     
     &__label {
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -100,11 +145,23 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     background-color: transparent;
     margin-bottom: 20px;
-    width: 100%;
     height: 50px;
     display: inline-block;
     padding: 15px;
     padding-left: 16px;
+    width: 100%;
+
+    @include device(tablet) {
+        width: 450px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include device(desctop) {
+        margin-right: 10px;
+        margin-bottom: 0;
+        width: 358px;
+    }
 }
 
     &__input {
