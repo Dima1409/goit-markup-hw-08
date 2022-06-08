@@ -19,5 +19,9 @@
     letter-spacing: var(--ls-006);
     text-transform: uppercase;
     margin-bottom: 30px;
+    @include device(desctop) {
+        max-width: 696px;
+        font-size: 44px;
+    }
 }
 }

@@ -39,6 +39,9 @@ img {
 }
 .section__title--mb {
     margin-bottom: 30px;
+    @include device(desctop) {
+        margin-bottom: 50px;
+    }
 
     @include device(desctop) {
         margin-bottom: 50px;
