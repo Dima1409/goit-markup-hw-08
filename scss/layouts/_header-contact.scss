@@ -4,9 +4,10 @@
 //     &__item:not(:last-child) {
 //     margin-right: 50px;
 // }
+    margin-top: auto;
     margin-bottom: 64px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     
     &__link {
     font-weight: 500;
@@ -20,7 +21,6 @@
     &:hover,
     &:focus {
     color: var(--accent-color);
-    font-size: 34px;
 }
 
     &--grey {

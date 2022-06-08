@@ -26,6 +26,7 @@
           <a href="./index.html" class="logo header__logo"
             ><span class="logo__text">Web</span>Studio</a
           >
+          <!-- Mobile-menu -->
           <button
             class="button-menu"
             type="button"
@@ -43,7 +44,7 @@
               <use class="icon-menu" href="./images/svg/icon.svg#menu-burger"></use>
             </svg>
           </button>
-          <div class="menu-container" id="menu-container" data-menu>
+          <div class="menu-container container" id="menu-container" data-menu>
             <ul class="main-list">
               <li class="main-list__item">
                 <a href="./index.html" class="main-list__link main-list__link--current">Студия</a>
@@ -59,18 +60,6 @@
             <ul class="header-contact">
               <li class="header-contact__item">
                 <a
-                  href="mailto:info@devstudio.com"
-                  class="header-contact__link header-contact__link--grey"
-                  aria-label="envelope"
-                >
-                  <svg class="header-contact__image" width="16" height="12">
-                    <use href="./images/svg/icon.svg#envelope"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="header-contact__item">
-                <a
                   href="tel:+380961111111"
                   class="header-contact__link header-contact__link--grey"
                   aria-label="smartphone"
@@ -79,6 +68,18 @@
                     <use href="./images/svg/icon.svg#smartphone"></use>
                   </svg>
                   +38 096 111 11 11</a
+                >
+              </li>
+              <li class="header-contact__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="header-contact__link header-contact__link--grey"
+                  aria-label="envelope"
+                >
+                  <svg class="header-contact__image" width="16" height="12">
+                    <use href="./images/svg/icon.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
                 >
               </li>
             </ul>
@@ -100,10 +101,62 @@
           </div>
         </nav>
       </div>
+      <!-- Меню планшет и десктоп -->
+      <div class="container header-tablet">
+        <nav class="navigation-t">
+          <a href="./index.html" class="logo header__logo header__logo-t"
+            ><span class="logo__text">Web</span>Studio</a
+          >
+          <ul class="main-list-t">
+            <li class="main-list-t__item">
+              <a href="./index.html" class="main-list-t__link main-list-t__link--current">Студия</a>
+            </li>
+            <li class="main-list-t__item">
+              <a href="./portfolio.html" class="main-list-t__link">Портфолио</a>
+            </li>
+            <li class="main-list-t__item">
+              <a href="#" class="main-list-t__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contact-t">
+          <li class="header-contact-t__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="header-contact-t__link header-contact-t__link--grey"
+              aria-label="envelope"
+            >
+              <svg
+                class="header-contact-t__image header-contact-t__image--envelope"
+                width="16"
+                height="12"
+              >
+                <use href="./images/svg/icon.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header-contact-t__item">
+            <a
+              href="tel:+380961111111"
+              class="header-contact-t__link header-contact-t__link--grey"
+              aria-label="smartphone"
+            >
+              <svg
+                class="header-contact-t__image header-contact-t__image--phone"
+                width="10"
+                height="16"
+              >
+                <use href="./images/svg/icon.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
-    <!-- 
-    Mobile-menu -->
-    <div class="mobile-menu">
+
+    <!-- <div class="mobile-menu">
       <ul class="mobile-menu__nav">
         <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Студия</a></li>
         <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Портфолио</a></li>
@@ -123,7 +176,7 @@
         <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Facebook</a></li>
         <li class="mobile-menu__item"><a href="" class="mobile-menu__link">LinkedIn</a></li>
       </ul>
-    </div>
+    </div> -->
     <!--=========================================================================================================================================-->
 
     <main>
@@ -194,7 +247,7 @@
       <!-- ========================================================================================================================================= -->
 
       <!-- *********************************************** СЕКЦИЯ "ЧЕМ МЫ ЗАНИМАЕМСЯ" *********************************************** -->
-      <!-- <section class="section section--no-padding-top">
+      <section class="section section--no-padding-top">
         <div class="container">
           <h2 class="section__title section__title--mb">Чем мы занимаемся</h2>
           <ul class="work-list">
@@ -233,7 +286,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- ========================================================================================================================================= -->
 
       <!-- *********************************************** СЕКЦИЯ НАША КОМАНДА *********************************************** -->
@@ -467,7 +520,7 @@
       <!-- /* ========================================================================================================================================= */ -->
     </main>
     <!-- *********************************************** ПОДВАЛ *********************************************** -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="contacts container">
         <div class="contacts-wrapper">
           <div class="start">
@@ -530,7 +583,6 @@
           </div>
         </div>
 
-        
         <div class="footer-form">
           <span class="join__text">Подпишитесь на рассылку</span>
 
@@ -548,9 +600,8 @@
             </button>
           </form>
         </div>
-        
       </div>
-    </footer> -->
+    </footer>
     <!-- =========================================================================================================================================  -->
 
     <!-- ********************************** МОДАЛЬНОЕ ОКНО ********************************************* -->
