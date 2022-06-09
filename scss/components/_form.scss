@@ -97,12 +97,16 @@
     justify-content: center;
 
     &__label {
-    font-size: 14px;
+    font-size: 12px;
     align-items: center;
-    line-height: 1.7;
+    line-height: 1.17;
     color: var(--paragraph-color);
     display: flex;
     letter-spacing: var(--ls-003);
+    @include device(desctop) {
+        font-size: 14px;
+        line-height: 1.7;
+    }
 }
 
     &__icon {

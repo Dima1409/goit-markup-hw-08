@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HomeWork7</title>
+    <title>HomeWork8</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -27,40 +27,131 @@
           <a href="./index.html" class="logo header__logo"
             ><span class="logo__text">Web</span>Studio</a
           >
-          <ul class="main-list">
-            <li class="main-list__item">
-              <a href="./index.html" class="main-list__link">Студия</a>
+          <!-- Mobile-menu -->
+          <button
+            class="button-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              class="menu-container__icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-close" href="./images/svg/icon.svg#close-burger"></use>
+              <use class="icon-menu" href="./images/svg/icon.svg#menu-burger"></use>
+            </svg>
+          </button>
+          <div class="menu-container container" id="menu-container" data-menu>
+            <ul class="main-list">
+              <li class="main-list__item">
+                <a href="./index.html" class="main-list__link">Студия</a>
+              </li>
+              <li class="main-list__item">
+                <a href="./portfolio.html" class="main-list__link main-list__link--current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="main-list__item">
+                <a href="#" class="main-list__link">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="header-contact">
+              <li class="header-contact__item">
+                <a
+                  href="tel:+380961111111"
+                  class="header-contact__link header-contact__link--grey"
+                  aria-label="smartphone"
+                >
+                  <svg class="header-contact__image" width="10" height="16">
+                    <use href="./images/svg/icon.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="header-contact__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="header-contact__link header-contact__link--grey"
+                  aria-label="envelope"
+                >
+                  <svg class="header-contact__image" width="16" height="12">
+                    <use href="./images/svg/icon.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="socials-text">
+              <li class="socials-text__item">
+                <a href="" class="socials-text__link">Instagram</a>
+              </li>
+              <li class="socials-text__item">
+                <a href="" class="socials-text__link">Twitter</a>
+              </li>
+              <li class="socials-text__item">
+                <a href="" class="socials-text__link">Facebook</a>
+              </li>
+              <li class="socials-text__item">
+                <a href="" class="socials-text__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- Меню планшет и десктоп -->
+      <div class="container header-tablet">
+        <nav class="navigation-t">
+          <a href="./index.html" class="logo header__logo header__logo-t"
+            ><span class="logo__text">Web</span>Studio</a
+          >
+          <ul class="main-list-t">
+            <li class="main-list-t__item">
+              <a href="./index.html" class="main-list-t__link">Студия</a>
             </li>
-            <li class="main-list__item">
-              <a href="./portfolio.html" class="main-list__link main-list__link--current"
+            <li class="main-list-t__item">
+              <a href="./portfolio.html" class="main-list-t__link main-list-t__link--current"
                 >Портфолио</a
               >
             </li>
-            <li class="main-list__item">
-              <a href="#" class="main-list__link">Контакты</a>
+            <li class="main-list-t__item">
+              <a href="#" class="main-list-t__link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-contact">
-          <li class="header-contact__item">
+        <ul class="header-contact-t">
+          <li class="header-contact-t__item">
             <a
               href="mailto:info@devstudio.com"
-              class="header-contact__link header-contact__link--grey"
+              class="header-contact-t__link header-contact-t__link--grey"
               aria-label="envelope"
             >
-              <svg class="header-contact__image" width="16" height="12">
+              <svg
+                class="header-contact-t__image header-contact-t__image--envelope"
+                width="16"
+                height="12"
+              >
                 <use href="./images/svg/icon.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header-contact__item">
+          <li class="header-contact-t__item">
             <a
               href="tel:+380961111111"
-              class="header-contact__link header-contact__link--grey"
+              class="header-contact-t__link header-contact-t__link--grey"
               aria-label="smartphone"
             >
-              <svg class="header-contact__image" width="10" height="16">
+              <svg
+                class="header-contact-t__image header-contact-t__image--phone"
+                width="10"
+                height="16"
+              >
                 <use href="./images/svg/icon.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -396,5 +487,6 @@
       </div>
     </footer>
     <!-- =========================================================================================================================================  -->
+    <script src="./js/menu-btn.js"></script>
   </body>
 </html>
