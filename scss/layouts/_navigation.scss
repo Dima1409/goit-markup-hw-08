@@ -3,16 +3,31 @@
     align-items: center;
     justify-content: space-between;
     min-height: 60px;
+    
+    @include device(tablet) {
+        display: none;
+    }
 }
 
 .socials-text {
     display: flex;
+    flex-wrap: wrap;
 }
 .socials-text__item:not(:last-child) {
     margin-right: 20px;
 }
 .socials-text__item {
     position: relative;
+    @media screen and (max-width: 436px) {
+        &:last-child {
+            margin-top: 10px;
+        }
+    }
+    @media screen and (max-width: 364px) {
+    &:nth-last-child(-n+2) {
+        margin-top: 10px;
+    }
+    }
 }
 .socials-text__item:not(:last-child)::after {
     position: absolute;

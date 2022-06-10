@@ -22,17 +22,16 @@
     <!-- *********************************************** ШАПКА САЙТА *********************************************** -->
     <header class="header">
       <div class="container header__container">
+        <!-- Mobile-menu -->
         <nav class="navigation">
           <a href="./index.html" class="logo header__logo"
             ><span class="logo__text">Web</span>Studio</a
           >
-          <!-- Mobile-menu -->
           <button
-            class="button-menu"
+            class="button-menu js-open-menu"
             type="button"
             aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button
+            aria-controls="mobile-menu"
           >
             <svg
               class="menu-container__icon"
@@ -40,11 +39,25 @@
               height="40"
               aria-label="Переключатель мобильного меню"
             >
-              <use class="icon-close" href="./images/svg/icon.svg#close-burger"></use>
               <use class="icon-menu" href="./images/svg/icon.svg#menu-burger"></use>
             </svg>
           </button>
-          <div class="menu-container container" id="menu-container" data-menu>
+          <div class="menu-container js-menu-container container" id="mobile-menu">
+            <button
+              class="button-menu js-close-menu"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                class="menu-container__icon"
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use class="icon-menu" href="./images/svg/icon.svg#close-burger"></use>
+              </svg>
+            </button>
             <ul class="main-list">
               <li class="main-list__item">
                 <a href="./index.html" class="main-list__link main-list__link--current">Студия</a>
@@ -100,59 +113,61 @@
             </ul>
           </div>
         </nav>
-      </div>
-      <!-- Меню планшет и десктоп -->
-      <div class="container header-tablet">
-        <nav class="navigation-t">
-          <a href="./index.html" class="logo header__logo header__logo-t"
-            ><span class="logo__text">Web</span>Studio</a
-          >
-          <ul class="main-list-t">
-            <li class="main-list-t__item">
-              <a href="./index.html" class="main-list-t__link main-list-t__link--current">Студия</a>
+        <!-- Меню планшет и десктоп -->
+        <div class="container header-tablet">
+          <nav class="navigation-t">
+            <a href="./index.html" class="logo header__logo header__logo-t"
+              ><span class="logo__text">Web</span>Studio</a
+            >
+            <ul class="main-list-t">
+              <li class="main-list-t__item">
+                <a href="./index.html" class="main-list-t__link main-list-t__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="main-list-t__item">
+                <a href="./portfolio.html" class="main-list-t__link">Портфолио</a>
+              </li>
+              <li class="main-list-t__item">
+                <a href="#" class="main-list-t__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header-contact-t">
+            <li class="header-contact-t__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="header-contact-t__link header-contact-t__link--grey"
+                aria-label="envelope"
+              >
+                <svg
+                  class="header-contact-t__image header-contact-t__image--envelope"
+                  width="16"
+                  height="12"
+                >
+                  <use href="./images/svg/icon.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="main-list-t__item">
-              <a href="./portfolio.html" class="main-list-t__link">Портфолио</a>
-            </li>
-            <li class="main-list-t__item">
-              <a href="#" class="main-list-t__link">Контакты</a>
+            <li class="header-contact-t__item">
+              <a
+                href="tel:+380961111111"
+                class="header-contact-t__link header-contact-t__link--grey"
+                aria-label="smartphone"
+              >
+                <svg
+                  class="header-contact-t__image header-contact-t__image--phone"
+                  width="10"
+                  height="16"
+                >
+                  <use href="./images/svg/icon.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="header-contact-t">
-          <li class="header-contact-t__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="header-contact-t__link header-contact-t__link--grey"
-              aria-label="envelope"
-            >
-              <svg
-                class="header-contact-t__image header-contact-t__image--envelope"
-                width="16"
-                height="12"
-              >
-                <use href="./images/svg/icon.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contact-t__item">
-            <a
-              href="tel:+380961111111"
-              class="header-contact-t__link header-contact-t__link--grey"
-              aria-label="smartphone"
-            >
-              <svg
-                class="header-contact-t__image header-contact-t__image--phone"
-                width="10"
-                height="16"
-              >
-                <use href="./images/svg/icon.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -853,7 +868,13 @@
         </button>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu-btn.js"></script>
   </body>
 </html>
