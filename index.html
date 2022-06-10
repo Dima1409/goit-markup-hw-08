@@ -230,34 +230,79 @@
           <ul class="work-list">
             <li class="work-list__item">
               <div class="work-list__wrapper">
-                <img
-                  class="work-list__image"
-                  src="./images/about/about-1.jpg"
-                  alt="Ноутбук с кодом на мониторе"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/about/about-1_lg.webp 1x, ./images/about/about-1_lg@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/about/about-1_lg.jpg 1x, ./images/about/about-1_lg@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="work-list__image"
+                    src="./images/about/about-1_lg.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
+
                 <div class="work-list__description">Десктопные приложения</div>
               </div>
             </li>
             <li class="work-list__item">
               <div class="work-list__wrapper">
-                <img
-                  class="work-list__image"
-                  src="./images/about/about-2.jpg"
-                  alt="Примеры адаптивной верстки"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/about/about-2_lg.webp 1x, ./images/about/about-2_lg@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/about/about-2_lg.jpg 1x, ./images/about/about-2_lg@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="work-list__image"
+                    src="./images/about/about-2_lg.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
+
                 <div class="work-list__description">Мобильные приложения</div>
               </div>
             </li>
             <li class="work-list__item">
               <div class="work-list__wrapper">
-                <img
-                  class="work-list__image"
-                  src="./images/about/about-3.jpg"
-                  alt="Палитра цветов на экране планшета"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/about/about-3_lg.webp 1x, ./images/about/about-3_lg@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/about/about-3_lg.jpg 1x, ./images/about/about-3_lg@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="work-list__image"
+                    src="./images/about/about-3_lg.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
+
                 <div class="work-list__description">Дизайнерские решения</div>
               </div>
             </li>
@@ -272,12 +317,50 @@
           <h2 class="section__title section__title--mb">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img
-                class="team-list__image"
-                src="./images/team/team-1.jpg"
-                alt="Дизайнер Иван Демьненко"
-                width="270"
-              />
+              <picture>
+                <!-- desctop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/item-1_lg.webp 1x, ./images/team/item-1_lg@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/item-1_lg.jpg 1x, ./images/team/item-1_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/item-1_md.webp 1x, ./images/team/item-1_md@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/item-1_md.jpg 1x, ./images/team/item-1_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/item-1_sm.webp 1x, ./images/team/item-1_sm@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/item-1_sm.jpg 1x, ./images/team/item-1_sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- def -->
+                <img
+                  class="team-list__image"
+                  src="./images/team/item-1_sm.jpg"
+                  alt=""
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-list__description">
                 <h3 class="team-list__title">Игорь Демьяненко</h3>
                 <p lang="en" class="team-list__text">Product Designer</p>
@@ -314,12 +397,50 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__image"
-                src="./images/team/team-2.jpg"
-                alt="Frontend разработчик Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <!-- desctop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/item-2_lg.webp 1x, ./images/team/item-2_lg@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/item-2_lg.jpg 1x, ./images/team/item-2_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/item-2_md.webp 1x, ./images/team/item-2_md@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/item-2_md.jpg 1x, ./images/team/item-2_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/item-2_sm.webp 1x, ./images/team/item-2_sm@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/item-2_sm.jpg 1x, ./images/team/item-2_sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- def -->
+                <img
+                  class="team-list__image"
+                  src="./images/team/item-2_sm.jpg"
+                  alt=""
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-list__description">
                 <h3 class="team-list__title">Ольга Репина</h3>
                 <p lang="en" class="team-list__text">Frontend Developer</p>
@@ -356,12 +477,50 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__image"
-                src="./images/team/team-3.jpg"
-                alt="Маркетолог Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <!-- desctop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/item-3_lg.webp 1x, ./images/team/item-3_lg@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/item-3_lg.jpg 1x, ./images/team/item-3_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/item-3_md.webp 1x, ./images/team/item-3_md@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/item-3_md.jpg 1x, ./images/team/item-3_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/item-3_sm.webp 1x, ./images/team/item-3_sm@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/item-3_sm.jpg 1x, ./images/team/item-3_sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- def -->
+                <img
+                  class="team-list__image"
+                  src="./images/team/item-3_sm.jpg"
+                  alt=""
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-list__description">
                 <h3 class="team-list__title">Николай Тарасов</h3>
                 <p lang="en" class="team-list__text">Marketing</p>
@@ -398,12 +557,50 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__image"
-                src="./images/team/team-4.jpg"
-                alt="UI Дизайнер Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <!-- desctop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/item-4_lg.webp 1x, ./images/team/item-4_lg@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/item-4_lg.jpg 1x, ./images/team/item-4_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/item-4_md.webp 1x, ./images/team/item-4_md@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/item-4_md.jpg 1x, ./images/team/item-4_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/item-4_sm.webp 1x, ./images/team/item-4_sm@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/item-4_sm.jpg 1x, ./images/team/item-4_sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- def -->
+                <img
+                  class="team-list__image"
+                  src="./images/team/item-4_sm.jpg"
+                  alt=""
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-list__description">
                 <h3 class="team-list__title">Михаил Ермаков</h3>
                 <p lang="en" class="team-list__text">UI Designer</p>

@@ -46,6 +46,8 @@
         flex-direction: column;
         z-index: 2;
 
+        &.icon-close {display: block;}
+
 
         & .header-contact__link {
             padding: 0;

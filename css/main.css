@@ -1471,6 +1471,10 @@ img {
   z-index: 2;
 }
 
+.menu-container.is-open.icon-close {
+  display: block;
+}
+
 .menu-container.is-open .header-contact__link {
   padding: 0;
 }
