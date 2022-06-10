@@ -71,8 +71,13 @@
     
     
     &__item {
+    @include device(mobile-only) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
     
-        @include device(tablet) {
+    @include device(tablet) {
         flex-basis: calc((100% - 60px) / 2);
     }
     
