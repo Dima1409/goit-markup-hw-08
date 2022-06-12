@@ -249,12 +249,6 @@ img {
   padding: 40px;
 }
 
-@media screen and (max-width: 767.98px) {
-  .form {
-    padding: 10px 40px;
-  }
-}
-
 .form__title {
   font-weight: 700;
   line-height: 1.5;
