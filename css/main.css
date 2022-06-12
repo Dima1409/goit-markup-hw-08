@@ -571,9 +571,10 @@ img {
 .header-contact__link {
   font-weight: 500;
   font-size: 24px;
+  padding: 32px 0;
   line-height: 1.17;
   letter-spacing: var(--ls-002);
-  padding: 32px 0;
+  padding: 0;
   color: var(--heading-color);
   -webkit-transition: color var(--duration) var(--timing-function);
   transition: color var(--duration) var(--timing-function);
@@ -588,6 +589,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header-contact__link--current {
+  color: var(--accent-color);
+  font-size: 34px;
 }
 
 .header-contact__image {
@@ -610,44 +616,45 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 200px 0;
+  padding: 118px 0;
   max-width: 1600px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(.././images/hero/hero_sm.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././images/hero/hero_sm.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_sm.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_sm.jpg);
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .order {
-    background-image: url(.././images/hero/hero_sm@2x.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-    background-image: url(.././images/hero/hero_sm@2x.jpg), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_sm@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_sm@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .order {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(.././images/hero/hero_md.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././images/hero/hero_md.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_md.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_md.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .order {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(.././images/hero/hero_md@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././images/hero/hero_md@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_md@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_md@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .order {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(.././images/hero/hero_lg.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././images/hero/hero_lg.jpg);
+    padding: 200px 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_lg.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_lg.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .order {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(.././images/hero/hero_lg@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././images/hero/hero_lg@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_lg@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_lg@2x.jpg);
   }
 }
 
@@ -858,7 +865,6 @@ img {
 }
 
 .team-list__text {
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -983,6 +989,12 @@ img {
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  .contacts-wrapper {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contacts-wrapper {
     display: -webkit-box;
@@ -1071,12 +1083,6 @@ img {
 
 /* ======================= */
 /* join */
-@media screen and (max-width: 767.98px) {
-  .join {
-    margin-bottom: 60px;
-  }
-}
-
 .join__text {
   display: block;
   font-weight: 700;
@@ -1234,8 +1240,6 @@ img {
   position: absolute;
   left: 50%;
   top: 50%;
-  max-height: 75vh;
-  overflow-y: scroll;
   opacity: 1;
   padding: 0;
   max-width: 450px;
@@ -1296,18 +1300,26 @@ img {
 .filter {
   list-style: none;
   padding: 0;
-  margin-bottom: 50px;
-  font-size: 0;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
   .filter {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 
@@ -1343,17 +1355,12 @@ img {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filter__item:not(:last-child) {
-  margin-right: 8px;
+.filter__item {
+  margin-bottom: 15px;
 }
 
-@media screen and (max-width: 767.98px) {
-  .filter__item {
-    display: inline-block;
-  }
-  .filter__item:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 15px;
-  }
+.filter__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1377,26 +1384,20 @@ img {
 
 @media screen and (min-width: 768px) {
   .portfolio__item {
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio__item {
-    -ms-flex-preferred-size: calc((100% - 90px) / 3);
-        flex-basis: calc((100% - 90px) / 3);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio__item:not(:last-child) {
-    margin-bottom: 30px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio__item:nth-last-child(-n+3) {
+  .portfolio:nth-last-child(-n+3) {
     margin-bottom: 0;
   }
 }
@@ -1564,6 +1565,7 @@ img {
 
 .header-contact__item:first-child {
   margin-bottom: 32px;
+  font-size: 34px;
 }
 
 .menu-container.is-open .header__logo {
@@ -1612,6 +1614,7 @@ img {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
+  margin-right: 84px;
 }
 
 .header__logo-t {
@@ -1629,7 +1632,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
@@ -1708,7 +1710,7 @@ img {
 
 .header-contact-t__link {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.1;
   letter-spacing: var(--ls-002);
   color: var(--heading-color);

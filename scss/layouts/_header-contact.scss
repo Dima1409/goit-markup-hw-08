@@ -1,9 +1,4 @@
 .header-contact {
-//     // display: flex;
-
-//     &__item:not(:last-child) {
-//     margin-right: 50px;
-// }
     margin-top: auto;
     margin-bottom: 64px;
     display: flex;
@@ -12,9 +7,10 @@
     &__link {
     font-weight: 500;
     font-size: 24px;
+    padding: 32px 0;
     line-height: 1.17;
     letter-spacing: var(--ls-002);
-    padding: 32px 0;
+    padding: 0;
     color: var(--heading-color);
     transition: color var(--duration) var(--timing-function);
 
@@ -25,11 +21,14 @@
 
     &--grey {
     color: var(--paragraph-color);
-    // display: flex;
     align-items: center;
 }
     
-}
+} 
+    &__link--current {
+        color: var(--accent-color);
+        font-size: 34px;
+    }
 
     &__image {
     fill: currentColor;

@@ -1,11 +1,17 @@
 .filter {
     list-style: none;
     padding: 0;
-    margin-bottom: 50px; 
-    font-size: 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+
     @include device(tablet) {
-        display: flex;
         justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    @include device(desctop) {
+        margin-bottom: 50px;
     }
 
     &__button {
@@ -45,20 +51,12 @@
 }
 }
 .filter__item {
+    margin-bottom: 15px;
     &:not(:last-child) {
         margin-right: 8px;
     }
-
-    @include device(mobile-only) {
-     display: inline-block;
-
-    &:not(:nth-last-child(-n + 2)) {
-        margin-bottom: 15px;
-    }
 }   
-  
-}
-    
+
 
 .portfolio {
 
@@ -78,15 +76,11 @@
     }
     
     @include device(tablet) {
-        flex-basis: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
     }
     
     @include device(desctop) {
-        flex-basis: calc((100% - 90px) / 3);
-    }
-    @include device(tablet) {
-        &:not(:last-child) {
-        margin-bottom: 30px;
+        flex-basis: calc((100% - 60px) / 3);
     }
     }
     @include device(desctop) {
@@ -94,9 +88,7 @@
             margin-bottom: 0;
         }
     }
-    
-    
-}
+
 
     &__link {
     transition: box-shadow var(--duration) var(--timing-function);

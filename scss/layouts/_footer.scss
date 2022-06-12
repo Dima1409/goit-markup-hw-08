@@ -20,6 +20,10 @@
     }
 }
 .contacts-wrapper {
+    @include device(mobile-only) {
+        margin-bottom: 60px;
+    }
+
     @include device(tablet) {
         display: flex;
         justify-content: space-around;
@@ -87,12 +91,6 @@
 
 
 /* join */
-.join {
-    @include device(mobile-only) {
-        margin-bottom: 60px;
-    }
-    
-}
 
 .join__text {
     display: block;
