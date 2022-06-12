@@ -28,6 +28,9 @@
     &__link--current {
         color: var(--accent-color);
         font-size: 34px;
+        @media screen and (max-width: 380px) {
+            font-size: 26px;
+        }
     }
 
     &__image {
