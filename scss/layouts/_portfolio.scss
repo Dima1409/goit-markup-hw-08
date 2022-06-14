@@ -51,7 +51,13 @@
 }
 }
 .filter__item {
-    margin-bottom: 15px;
+    @include device(mobile-only) {
+        margin-bottom: 15px;
+        &:nth-last-child(-n+2) {
+            margin-bottom: 0;
+        }
+    }
+    
     &:not(:last-child) {
         margin-right: 8px;
     }
