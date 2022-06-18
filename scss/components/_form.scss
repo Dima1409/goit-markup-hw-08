@@ -53,14 +53,11 @@
     &__input {
     display: inline-block;
     width: 100%;
-    max-height: 34px;
+    max-height: 40px;
     border-radius: 4px;
     border: 1px solid var(--border-input);
     padding-left: 42px;
     transition: border-color var(--duration) var(--timing-function);
-    @include device(tablet) {
-        max-height: 40x;
-    }
 
     &:focus {
     border-color: var(--accent-color);
