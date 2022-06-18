@@ -2,10 +2,11 @@
 .form {
     width: 100%;
     height: 100%;
-    padding: 40px;
-    // @include device(mobile-only) {
-    //     padding: 10px 40px;
-    // }
+    padding: 25px;
+    @include device(tablet) {
+      padding: 40px;  
+    }
+    
     
     &__title {
     font-weight: 700;
@@ -13,8 +14,13 @@
     text-align: center;
     letter-spacing: var(--ls-003);
     color: var(--heading-color);
+    font-size: 16px;
+    margin-bottom: 4px;
+    @include device(tablet) {
     font-size: 20px;
     margin-bottom: 12px;
+    }
+    
 }
 
     &__field {
@@ -22,7 +28,11 @@
 }
 
     &__textarea {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    @include device(tablet) {
+     margin-bottom: 20px;   
+    }
+    
 }
 
     &__label {
@@ -43,11 +53,14 @@
     &__input {
     display: inline-block;
     width: 100%;
-    height: 40px;
+    max-height: 34px;
     border-radius: 4px;
     border: 1px solid var(--border-input);
     padding-left: 42px;
     transition: border-color var(--duration) var(--timing-function);
+    @include device(tablet) {
+        max-height: 40x;
+    }
 
     &:focus {
     border-color: var(--accent-color);
@@ -58,14 +71,17 @@
     &__comment {
     display: block;
     resize: none;
-    min-height: 120px;
     width: 100%;
+    min-height: 70px;
     padding: 12px 16px;
     font-size: 12px;
     border-radius: 4px;
     border: 1px solid var(--border-input);
     color: var(--heading-color);
     transition: border-color var(--duration) var(--timing-function);
+    @include device(tablet) {
+        min-height: 120px;
+    }
 
     &:focus {
     border-color: var(--accent-color);
@@ -95,9 +111,12 @@
 }
 
     .license {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: center;
+    @include device(tablet) {
+    margin-bottom: 30px;
+    }
 
     &__label {
     font-size: 12px;
